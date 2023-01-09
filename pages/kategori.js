@@ -1,10 +1,8 @@
-import Card from '../component/Card';
-import Diskon from '../component/Diskon';
-import Card2 from '../component/Konten';
-import Footer from '../component/Footer';
 import styled from "styled-components";
+import Footer from "../component/Footer";
+import Banner2 from "../component/Banner2";
+import Category from "../component/category";
 import Link from 'next/link'
-import Banner from '../component/Banner';
 
 const Header = styled.div`
   background: #f2f5e2;
@@ -48,10 +46,9 @@ const Gambar3 = styled.img`
   width: 50px;
 `;
 
-export default function Home() {
+export default function Kategori() {
   return (
     <>
-    
       <Header>
         <Gambar2 src="log.png" />
 
@@ -63,9 +60,11 @@ export default function Home() {
           <Text2>
             <i class="cib-unreal-engine"></i>
             <Text3>
-             <Text4>Home</Text4>
+              <Link  href='/Home'
+              >Home         
+              </Link>
               <Text4>produk</Text4>
-              <Link href='/kategori'>Kategori</Link>
+              <Text4 >Kategori</Text4>
               <Text4>Chat</Text4>
               <Text4>
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -81,12 +80,9 @@ export default function Home() {
           </Text2>
         </Text>
       </Header>
-      <Banner/>
-
-      <Card/>
-    <Diskon/>
-    <Card2/>
-    <Footer/>
+      <Banner2 />
+      <Category/>
+      <Footer/>
     </>
   );
 }
