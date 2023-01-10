@@ -1,0 +1,3 @@
+publish = ".next"
+
+package = "@netlify/plugin-nextjs-experimental"
