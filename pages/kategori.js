@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Footer from "../component/Footer";
 import Banner2 from "../component/Banner2";
-import Category from "../component/category";
+import Category from "../component/Category";
 import Link from 'next/link'
 
 const Header = styled.div`
